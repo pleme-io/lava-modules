@@ -181,9 +181,9 @@ rec {
       };
       "lava-arch" = rec {
         crateName = "lava-arch";
-        version = "0.1.6";
+        version = "0.2.1";
         edition = "2024";
-        sha256 = "1jhdn8k6gfnxsl2lbppqj79y5ba3bffvj9rgd034gq4j12m683by";
+        sha256 = "1540k0688m0h4a76xycvf2ylwkzfsz0qigwqnpr6d1x7nzwpzvil";
         libName = "lava_arch";
         authors = [
           "pleme-io"
@@ -216,9 +216,9 @@ rec {
       };
       "lava-core" = rec {
         crateName = "lava-core";
-        version = "0.1.7";
+        version = "0.2.2";
         edition = "2024";
-        sha256 = "1zrcbx8qhmvdlcqp3013a2lxp8mk1ql61ap9i94zf53nqbfm1fzz";
+        sha256 = "1yhw3575dvkh66mjg22pz1lb4gv9qkpswxqz56v4lykwhccvrr53";
         libName = "lava_core";
         authors = [
           "pleme-io"
@@ -237,6 +237,7 @@ rec {
           {
             name = "serde_json";
             packageId = "serde_json";
+            features = [ "preserve_order" ];
           }
           {
             name = "serde_yaml";
@@ -251,9 +252,9 @@ rec {
       };
       "lava-eval" = rec {
         crateName = "lava-eval";
-        version = "0.1.10";
+        version = "0.2.1";
         edition = "2024";
-        sha256 = "05h3y87bl9mywxk4qfp89cpk89jw2zxzyad9z8m6097pydrscmk0";
+        sha256 = "1kqgg7jm6ma34pvjdjiqna3961b845i8mf1a627vc7m1q91ygsyr";
         libName = "lava_eval";
         authors = [
           "pleme-io"
@@ -298,7 +299,7 @@ rec {
       };
       "lava-modules" = rec {
         crateName = "lava-modules";
-        version = "0.1.4";
+        version = "0.2.1";
         edition = "2024";
         src = lib.cleanSourceWith { filter = sourceFilter;  src = ./.; };
         libName = "lava_modules";
@@ -574,6 +575,11 @@ rec {
         ];
         dependencies = [
           {
+            name = "indexmap";
+            packageId = "indexmap";
+            optional = true;
+          }
+          {
             name = "itoa";
             packageId = "itoa";
           }
@@ -612,7 +618,7 @@ rec {
           "preserve_order" = [ "indexmap" "std" ];
           "std" = [ "memchr/std" "serde_core/std" ];
         };
-        resolvedDefaultFeatures = [ "default" "std" ];
+        resolvedDefaultFeatures = [ "default" "indexmap" "preserve_order" "std" ];
       };
       "serde_yaml" = rec {
         crateName = "serde_yaml";
