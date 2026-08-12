@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "90fded4ef8adc7e82de1374e48704a4749715f72d3a35d4570b893c4bcbd85c7",
+  "cargo_lock_sha256": "6861e531f4625d215b47a2264657baf8ea8ff840b7ce1b17196815e1768a0a89",
   "manifest_sha256": {
     "Cargo.toml": "c0677e4fd4e92c15c4a3532f6ebdd5c57d0bb7280262e4c00d1f2fe09429edcc"
   },
@@ -61,7 +61,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-arch-0.2.0-ecb9dedf799c5b9450d0224f7cc0f82ba28275da": {
+      "lava-arch-0.2.1": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -77,7 +77,7 @@
           },
           {
             "name": "lava_core",
-            "package_key": "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae",
+            "package_key": "lava-core-0.2.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -121,7 +121,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": {
+      "lava-core-0.2.2": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -183,7 +183,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-eval-0.2.0-b0a628d64e878f221808b7c00846f3c2b229f8df": {
+      "lava-eval-0.2.1": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -199,7 +199,7 @@
           },
           {
             "name": "lava_arch",
-            "package_key": "lava-arch-0.2.0-ecb9dedf799c5b9450d0224f7cc0f82ba28275da",
+            "package_key": "lava-arch-0.2.1",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -209,7 +209,7 @@
           },
           {
             "name": "lava_core",
-            "package_key": "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae",
+            "package_key": "lava-core-0.2.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -289,7 +289,7 @@
           },
           {
             "name": "lava_core",
-            "package_key": "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae",
+            "package_key": "lava-core-0.2.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -299,7 +299,7 @@
           },
           {
             "name": "lava_eval",
-            "package_key": "lava-eval-0.2.0-b0a628d64e878f221808b7c00846f3c2b229f8df",
+            "package_key": "lava-eval-0.2.1",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -846,26 +846,14 @@
     "itoa-1.0.18": {
       "edition": "2021"
     },
-    "lava-arch-0.2.0-ecb9dedf799c5b9450d0224f7cc0f82ba28275da": {
-      "edition": "2024",
-      "lib_target": {
-        "name": "lava_arch",
-        "path": "src/lib.rs"
-      }
+    "lava-arch-0.2.1": {
+      "edition": "2024"
     },
-    "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": {
-      "edition": "2024",
-      "lib_target": {
-        "name": "lava_core",
-        "path": "src/lib.rs"
-      }
+    "lava-core-0.2.2": {
+      "edition": "2024"
     },
-    "lava-eval-0.2.0-b0a628d64e878f221808b7c00846f3c2b229f8df": {
-      "edition": "2024",
-      "lib_target": {
-        "name": "lava_eval",
-        "path": "src/lib.rs"
-      }
+    "lava-eval-0.2.1": {
+      "edition": "2024"
     },
     "lava-modules-0.2.0": {
       "edition": "2024",
@@ -945,10 +933,6 @@
       "build_script": "build.rs"
     }
   },
-  "git_nar_sha256": {
-    "lava-arch-0.2.0-ecb9dedf799c5b9450d0224f7cc0f82ba28275da": "sha256-ktqhs0AUWCXbs9A/MR+xqVwe6CBE/PTeU3wfI+sFYjk=",
-    "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": "sha256-BNRpvPO0r5cKusks0dK4bUfxmrrg0lTF6uw9WMdK6eI=",
-    "lava-eval-0.2.0-b0a628d64e878f221808b7c00846f3c2b229f8df": "sha256-vSdCeGqd18skmqjmmUu2LqSbnFUZO+easdMQWsT2xyE="
-  },
+  "git_nar_sha256": {},
   "flake_metadata": {}
 }
